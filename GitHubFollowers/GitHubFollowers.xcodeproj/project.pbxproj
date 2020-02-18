@@ -10,6 +10,7 @@
 		C00EC6C223FADB09006D494D /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00EC6C123FADB09006D494D /* Follower.swift */; };
 		C00EC6C523FADC24006D494D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00EC6C423FADC24006D494D /* User.swift */; };
 		C00EC6C823FAE2B4006D494D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00EC6C723FAE2B4006D494D /* NetworkManager.swift */; };
+		C00EC6CB23FC2B26006D494D /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00EC6CA23FC2B26006D494D /* ErrorMessage.swift */; };
 		C03D66C423F6EB0E00EE545F /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03D66C323F6EB0E00EE545F /* FollowerListVC.swift */; };
 		C0796B2523F44B86000293A7 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0796B2423F44B86000293A7 /* SearchVC.swift */; };
 		C0796B2723F44BB5000293A7 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0796B2623F44BB5000293A7 /* FavoritesListVC.swift */; };
@@ -29,6 +30,7 @@
 		C00EC6C123FADB09006D494D /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		C00EC6C423FADC24006D494D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C00EC6C723FAE2B4006D494D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C00EC6CA23FC2B26006D494D /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		C03D66C323F6EB0E00EE545F /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		C0796B2423F44B86000293A7 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		C0796B2623F44BB5000293A7 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
@@ -105,6 +107,14 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		C00EC6C923FC2B17006D494D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C00EC6CA23FC2B26006D494D /* ErrorMessage.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		C03D66C523F6EB1900EE545F /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +147,7 @@
 				C03D66C523F6EB1900EE545F /* View Controllers */,
 				C00EC6C623FAE28E006D494D /* Managers */,
 				C00EC6BF23FAD712006D494D /* Extensions */,
+				C00EC6C923FC2B17006D494D /* Utilities */,
 				C00EC6BE23FAD6DE006D494D /* Custom Views */,
 				C00EC6C323FADB10006D494D /* Models */,
 				C00EC6C023FAD773006D494D /* Support */,
@@ -222,6 +233,7 @@
 				C0A9B80B23F7623E0007F1B3 /* UIViewController+Ext.swift in Sources */,
 				C0796B2723F44BB5000293A7 /* FavoritesListVC.swift in Sources */,
 				C0A9B80923F75C700007F1B3 /* GFAlertVC.swift in Sources */,
+				C00EC6CB23FC2B26006D494D /* ErrorMessage.swift in Sources */,
 				C0A9B80723F75BB60007F1B3 /* GFBodyLabel.swift in Sources */,
 				C00EC6C223FADB09006D494D /* Follower.swift in Sources */,
 				C0A9B80523F75A620007F1B3 /* GFTitleLabel.swift in Sources */,
