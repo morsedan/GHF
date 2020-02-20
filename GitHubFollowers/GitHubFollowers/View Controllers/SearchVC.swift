@@ -20,6 +20,7 @@ class SearchVC: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .systemBackground
+        
         configureLogoImageView()
         configureTextField()
         configureCallToActionButton()
