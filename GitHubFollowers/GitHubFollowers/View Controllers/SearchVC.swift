@@ -72,6 +72,7 @@ class SearchVC: UIViewController {
             usernameTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
             usernameTextField.heightAnchor.constraint(equalToConstant: 50)
         ])
+        usernameTextField.becomeFirstResponder()
     }
     
     func configureCallToActionButton() {
