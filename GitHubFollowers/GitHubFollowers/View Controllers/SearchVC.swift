@@ -86,6 +86,8 @@ class SearchVC: UIViewController {
             callToActionButton.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
+    
+    
 }
 
 extension SearchVC: UITextFieldDelegate {
