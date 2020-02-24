@@ -1,8 +1,8 @@
 //
-//  ErrorMessage.swift
+//  GFError.swift
 //  GitHubFollowers
 //
-//  Created by morse on 2/18/20.
+//  Created by morse on 2/24/20.
 //  Copyright © 2020 morse. All rights reserved.
 //
 

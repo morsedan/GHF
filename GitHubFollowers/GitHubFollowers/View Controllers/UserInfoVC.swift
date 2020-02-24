@@ -25,7 +25,7 @@ class UserInfoVC: UIViewController {
             case .success(let user):
                 print(user)
             case .failure(let error):
-                print(error)
+                self.presentGFAlertOnMainThread(title: "Something wend wrong", message: error.rawValue, buttonTitle: "Ok")
             }
         }
     }
