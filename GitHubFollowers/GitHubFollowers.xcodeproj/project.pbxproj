@@ -12,6 +12,8 @@
 		C00EC6C823FAE2B4006D494D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00EC6C723FAE2B4006D494D /* NetworkManager.swift */; };
 		C00F8A5F23FEDB04003D8145 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F8A5E23FEDB04003D8145 /* UIHelper.swift */; };
 		C01EF3152406C80B0094CEAB /* GFItemInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EF3142406C80B0094CEAB /* GFItemInfoVC.swift */; };
+		C01EF3172406CAD40094CEAB /* GFRepoItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EF3162406CAD40094CEAB /* GFRepoItemVC.swift */; };
+		C01EF31E2408161F0094CEAB /* GFFollowerItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EF31D2408161F0094CEAB /* GFFollowerItemVC.swift */; };
 		C03D66C423F6EB0E00EE545F /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03D66C323F6EB0E00EE545F /* FollowerListVC.swift */; };
 		C0509E4D24033F0E002D4CA3 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0509E4C24033F0E002D4CA3 /* UserInfoVC.swift */; };
 		C0509E4F24041A0B002D4CA3 /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0509E4E24041A0B002D4CA3 /* GFError.swift */; };
@@ -42,6 +44,8 @@
 		C00EC6C723FAE2B4006D494D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C00F8A5E23FEDB04003D8145 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		C01EF3142406C80B0094CEAB /* GFItemInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoVC.swift; sourceTree = "<group>"; };
+		C01EF3162406CAD40094CEAB /* GFRepoItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFRepoItemVC.swift; sourceTree = "<group>"; };
+		C01EF31D2408161F0094CEAB /* GFFollowerItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFFollowerItemVC.swift; sourceTree = "<group>"; };
 		C03D66C323F6EB0E00EE545F /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		C0509E4C24033F0E002D4CA3 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		C0509E4E24041A0B002D4CA3 /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
@@ -139,6 +143,16 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		C01EF31F240816770094CEAB /* Item Info VCs */ = {
+			isa = PBXGroup;
+			children = (
+				C01EF3142406C80B0094CEAB /* GFItemInfoVC.swift */,
+				C01EF3162406CAD40094CEAB /* GFRepoItemVC.swift */,
+				C01EF31D2408161F0094CEAB /* GFFollowerItemVC.swift */,
+			);
+			path = "Item Info VCs";
+			sourceTree = "<group>";
+		};
 		C03D66C523F6EB1900EE545F /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,9 +200,9 @@
 		C07DBB132400404D00FFD60D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C01EF31F240816770094CEAB /* Item Info VCs */,
 				C0A9B80823F75C700007F1B3 /* GFAlertVC.swift */,
 				C0509E5024041D6D002D4CA3 /* GFUserInfoHeaderVC.swift */,
-				C01EF3142406C80B0094CEAB /* GFItemInfoVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -323,6 +337,7 @@
 				C0E4231523FD7BCC00B028D2 /* GFAvatarImageView.swift in Sources */,
 				C0796B2723F44BB5000293A7 /* FavoritesListVC.swift in Sources */,
 				C0509E4F24041A0B002D4CA3 /* GFError.swift in Sources */,
+				C01EF31E2408161F0094CEAB /* GFFollowerItemVC.swift in Sources */,
 				C053E9C2240573E100BBC7C2 /* GFItemInfoView.swift in Sources */,
 				C0A9B80923F75C700007F1B3 /* GFAlertVC.swift in Sources */,
 				C0E4231323FD7B5400B028D2 /* FollowerCell.swift in Sources */,
@@ -336,6 +351,7 @@
 				C03D66C423F6EB0E00EE545F /* FollowerListVC.swift in Sources */,
 				C0E9D29D23F2EF7F003A6899 /* AppDelegate.swift in Sources */,
 				C0E9D29F23F2EF7F003A6899 /* SceneDelegate.swift in Sources */,
+				C01EF3172406CAD40094CEAB /* GFRepoItemVC.swift in Sources */,
 				C0509E4D24033F0E002D4CA3 /* UserInfoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
