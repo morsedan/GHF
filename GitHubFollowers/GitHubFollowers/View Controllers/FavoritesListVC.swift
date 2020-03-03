@@ -14,6 +14,15 @@ class FavoritesListVC: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .systemBlue
+        
+        PersistenceMaganger.retrieveFavorites { result in
+            switch result {
+            case .success(let favorites):
+                favorites.compactMap { print($0.login) }
+            case.failure(let error):
+                break
+            }
+        }
     }
 
 }
