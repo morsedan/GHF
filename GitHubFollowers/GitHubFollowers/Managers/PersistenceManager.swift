@@ -38,7 +38,7 @@ enum PersistenceMaganger {
                     retrievedFavorites.removeAll { $0.login == favorite.login }
                 }
                 
-                completed(save(favorites: favorites)) // should this save retrievedFavorites?
+                completed(save(favorites: retrievedFavorites)) // should this save retrievedFavorites?
                 
             case .failure(let error):
                 completed(error)
