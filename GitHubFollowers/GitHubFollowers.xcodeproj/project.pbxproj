@@ -19,6 +19,8 @@
 		C01EF349240D5C990094CEAB /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EF348240D5C990094CEAB /* PersistenceManager.swift */; };
 		C01EF352240EABCF0094CEAB /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EF351240EABCF0094CEAB /* FavoriteCell.swift */; };
 		C01EF355240FF3B80094CEAB /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EF354240FF3B80094CEAB /* GFTabBarController.swift */; };
+		C01EF3A12412B5920094CEAB /* GFAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EF3A02412B5920094CEAB /* GFAlertContainerView.swift */; };
+		C01EF3A32412BDEA0094CEAB /* GFDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EF3A22412BDEA0094CEAB /* GFDataLoadingVC.swift */; };
 		C03D66C423F6EB0E00EE545F /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03D66C323F6EB0E00EE545F /* FollowerListVC.swift */; };
 		C0509E4D24033F0E002D4CA3 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0509E4C24033F0E002D4CA3 /* UserInfoVC.swift */; };
 		C0509E4F24041A0B002D4CA3 /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0509E4E24041A0B002D4CA3 /* GFError.swift */; };
@@ -56,6 +58,8 @@
 		C01EF348240D5C990094CEAB /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		C01EF351240EABCF0094CEAB /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		C01EF354240FF3B80094CEAB /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
+		C01EF3A02412B5920094CEAB /* GFAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertContainerView.swift; sourceTree = "<group>"; };
+		C01EF3A22412BDEA0094CEAB /* GFDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDataLoadingVC.swift; sourceTree = "<group>"; };
 		C03D66C323F6EB0E00EE545F /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		C0509E4C24033F0E002D4CA3 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		C0509E4E24041A0B002D4CA3 /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
@@ -191,6 +195,7 @@
 			children = (
 				C07DBB15240040D900FFD60D /* GFEmptyStateView.swift */,
 				C053E9C1240573E100BBC7C2 /* GFItemInfoView.swift */,
+				C01EF3A02412B5920094CEAB /* GFAlertContainerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 				C01EF31F240816770094CEAB /* Item Info VCs */,
 				C0A9B80823F75C700007F1B3 /* GFAlertVC.swift */,
 				C0509E5024041D6D002D4CA3 /* GFUserInfoHeaderVC.swift */,
+				C01EF3A22412BDEA0094CEAB /* GFDataLoadingVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 			files = (
 				C00EC6C523FADC24006D494D /* User.swift in Sources */,
 				C0796B2B23F4552B000293A7 /* GFTextField.swift in Sources */,
+				C01EF3A32412BDEA0094CEAB /* GFDataLoadingVC.swift in Sources */,
 				C0796B2523F44B86000293A7 /* SearchVC.swift in Sources */,
 				C0796B2923F4522F000293A7 /* GFButton.swift in Sources */,
 				C0A9B80B23F7623E0007F1B3 /* UIViewController+Ext.swift in Sources */,
@@ -370,6 +377,7 @@
 				C0A9B80723F75BB60007F1B3 /* GFBodyLabel.swift in Sources */,
 				C00EC6C223FADB09006D494D /* Follower.swift in Sources */,
 				C0A9B80523F75A620007F1B3 /* GFTitleLabel.swift in Sources */,
+				C01EF3A12412B5920094CEAB /* GFAlertContainerView.swift in Sources */,
 				C0509E5324041DFB002D4CA3 /* GFSecondaryTitleLabel.swift in Sources */,
 				C07DBB16240040D900FFD60D /* GFEmptyStateView.swift in Sources */,
 				C01EF349240D5C990094CEAB /* PersistenceManager.swift in Sources */,
