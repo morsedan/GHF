@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol UserInfoVCDelegate: class {
+    func didRequestFollowers(for username: String)
+}
+
 class UserInfoVC: GFDataLoadingVC {
     
     let headerView = UIView()
@@ -17,11 +21,11 @@ class UserInfoVC: GFDataLoadingVC {
     var itemViews: [UIView] = []
     
     var username: String!
-    weak var delegate: FollowerListVCDelegate!
-
+    weak var delegate: UserInfoVCDelegate!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         configureViewController()
         layoutUI()
         getUserInfo()
@@ -63,7 +67,7 @@ class UserInfoVC: GFDataLoadingVC {
     func layoutUI() {
         let padding: CGFloat = 20
         let itemHeight:CGFloat = 140
-
+        
         itemViews = [headerView, itemViewOne, itemViewTwo, dateLabel]
         
         for itemView in itemViews {
@@ -101,10 +105,10 @@ class UserInfoVC: GFDataLoadingVC {
     @objc func dismissVC() {
         dismiss(animated: true)
     }
-
+    
 }
 
-extension UserInfoVC: ItemInfoVCDelegate {
+extension UserInfoVC: GFRepoItemVCDelegate {
     func didTapGitHubProfile(for user: User) {
         guard let url = URL(string: user.htmlUrl) else {
             presentGFAlertOnMainThread(title: "Invalid URL", message: "The url attached to this user is invalid", buttonTitle: "Ok")
@@ -113,6 +117,10 @@ extension UserInfoVC: ItemInfoVCDelegate {
         presentSafariVC(with: url)
     }
     
+    
+}
+
+extension UserInfoVC: GFFollowerItemVCDelegate {
     func didTapGetFollowers(for user: User) {
         guard user.followers != 0 else {
             presentGFAlertOnMainThread(title: "No Followers", message: "This user has no followers. What a shame 😞.", buttonTitle: "So sad")
@@ -121,6 +129,7 @@ extension UserInfoVC: ItemInfoVCDelegate {
         delegate.didRequestFollowers(for: user.login)
         dismissVC()
     }
-    
-    
 }
+
+
+
