@@ -33,12 +33,13 @@ class GFAlertVC: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) had not been implemented")
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
         view.addSubviews(containerView, titleLabel, messageLabel, actionButton)
+        
         configureContainerView()
         configureTitleLabel()
         configureActionButton()
@@ -56,6 +57,7 @@ class GFAlertVC: UIViewController {
     
     func configureTitleLabel() {
         titleLabel.text = alertTitle ?? "Something went wrong"
+        
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: padding),
             titleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),

@@ -9,6 +9,7 @@
 import Foundation
 
 enum PersistenceActionType {
+    
     case add, remove
 }
 
@@ -17,6 +18,7 @@ enum PersistenceMaganger {
     static private let defaults = UserDefaults.standard
     
     enum Keys {
+        
         static let favorites = "favorites"
     }
     
@@ -73,4 +75,4 @@ enum PersistenceMaganger {
         }
     }
 }
- 
+

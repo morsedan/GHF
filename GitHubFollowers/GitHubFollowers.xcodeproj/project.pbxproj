@@ -121,9 +121,9 @@
 			children = (
 				C0A9B80A23F7623E0007F1B3 /* UIViewController+Ext.swift */,
 				C01EF32024081D440094CEAB /* Date+Extension.swift */,
-				C01EF32224081D590094CEAB /* String+Extension.swift */,
 				C0DFA36D24167D7E002E440F /* UIView+Extension.swift */,
 				C0DFA36F2417D199002E440F /* UITableView+Extension.swift */,
+				C01EF32224081D590094CEAB /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";

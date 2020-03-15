@@ -9,7 +9,7 @@
 import UIKit
 
 class GFTitleLabel: UILabel {
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -31,8 +31,5 @@ class GFTitleLabel: UILabel {
         minimumScaleFactor = 0.9
         lineBreakMode = .byTruncatingTail
         translatesAutoresizingMaskIntoConstraints = false
-        
-        
     }
-
 }
