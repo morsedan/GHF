@@ -160,8 +160,8 @@
 		C00EC6C923FC2B17006D494D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				C0509E4E24041A0B002D4CA3 /* GFError.swift */,
 				C00F8A5E23FEDB04003D8145 /* UIHelper.swift */,
+				C0509E4E24041A0B002D4CA3 /* GFError.swift */,
 				C0509E5424042411002D4CA3 /* Constants.swift */,
 			);
 			path = Utilities;
