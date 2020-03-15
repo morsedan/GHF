@@ -13,11 +13,11 @@ enum ItemInfoType {
 }
 
 class GFItemInfoView: UIView {
-
+    
     let symbolImageView = UIImageView()
     let titleLabel = GFTitleLabel(textAlignment: .left, fontSize: 14)
     let countLabel = GFTitleLabel(textAlignment: .center, fontSize: 14)
-
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -63,10 +63,10 @@ class GFItemInfoView: UIView {
             titleLabel.text = "Public Gists"
         case .following:
             symbolImageView.image = SFSymbols.following
-            titleLabel.text = "Followers"
+            titleLabel.text = "Following"
         case .followers:
             symbolImageView.image = SFSymbols.followers
-            titleLabel.text = "Following"
+            titleLabel.text = "Followers"
         }
         
         countLabel.text = "\(count)"
