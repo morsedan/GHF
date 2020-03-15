@@ -9,6 +9,7 @@
 import UIKit
 
 class FollowerCell: UICollectionViewCell {
+    
     static let reuseID = "FollowerCell"
     
     let avatarImageView = GFAvatarImageView(frame: .zero)
@@ -24,14 +25,12 @@ class FollowerCell: UICollectionViewCell {
     }
     
     func set(follower: Follower) {
-        usernameLabel.text = follower.login
         avatarImageView.downloadImage(from: follower.avatarUrl)
+        usernameLabel.text = follower.login
     }
     
     private func configure() {
-        addSubview(avatarImageView)
-        addSubview(usernameLabel)
-        
+        addSubviews(avatarImageView, usernameLabel)
         let padding: CGFloat = 8
         
         NSLayoutConstraint.activate([

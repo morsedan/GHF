@@ -9,7 +9,7 @@
 import UIKit
 
 class GFTextField: UITextField {
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -36,7 +36,7 @@ class GFTextField: UITextField {
         backgroundColor = .tertiarySystemBackground
         autocorrectionType = .no
         returnKeyType = .go
+        clearButtonMode = .whileEditing
         placeholder = "Enter a username"
     }
-
 }

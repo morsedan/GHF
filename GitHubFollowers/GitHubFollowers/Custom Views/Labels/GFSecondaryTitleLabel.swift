@@ -9,7 +9,7 @@
 import UIKit
 
 class GFSecondaryTitleLabel: UILabel {
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -19,10 +19,9 @@ class GFSecondaryTitleLabel: UILabel {
         fatalError("init(coder:) had not been implemented")
     }
     
-    init(fontSize: CGFloat) {
-        super.init(frame: .zero)
+    convenience init(fontSize: CGFloat) {
+        self.init(frame: .zero)
         self.font = UIFont.systemFont(ofSize: fontSize, weight: .medium)
-        configure()
     }
     
     private func configure() {
@@ -31,8 +30,5 @@ class GFSecondaryTitleLabel: UILabel {
         minimumScaleFactor = 0.9
         lineBreakMode = .byTruncatingTail
         translatesAutoresizingMaskIntoConstraints = false
-        
-        
     }
-
 }
