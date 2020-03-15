@@ -59,7 +59,6 @@ class UserInfoVC: GFDataLoadingVC {
             guard let self = self else { return }
             switch result {
             case .success(let user):
-                print("Followers:", user.followers, "Following:", user.following)
                 DispatchQueue.main.async {
                     self.configureUIElements(with: user)
                 }
