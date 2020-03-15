@@ -18,7 +18,6 @@ class FavoritesListVC: GFDataLoadingVC {
         
         configureViewController()
         configureTableView()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +35,7 @@ class FavoritesListVC: GFDataLoadingVC {
         view.addSubview(tableView)
         tableView.frame = view.bounds
         tableView.rowHeight = 80
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.removeExcessCells()
@@ -48,17 +48,21 @@ class FavoritesListVC: GFDataLoadingVC {
             
             switch result {
             case .success(let favorites):
-                if favorites.isEmpty {
-                    self.showEmptyStateView(with: "No favorites?\nAdd one on the follower screen.", in: self.view)
-                } else {
-                    self.favorites = favorites
-                    DispatchQueue.main.async {
-                        self.tableView.reloadData()
-                        self.view.bringSubviewToFront(self.tableView)
-                    }
-                }
+                self.updateUI(with: favorites)
             case.failure(let error):
                 self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
+            }
+        }
+    }
+    
+    func updateUI(with favorites: [Follower]) {
+        if favorites.isEmpty {
+            self.showEmptyStateView(with: "No favorites?\nAdd one on the follower screen.", in: self.view)
+        } else {
+            self.favorites = favorites
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+                self.view.bringSubviewToFront(self.tableView)
             }
         }
     }

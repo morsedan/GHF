@@ -116,7 +116,6 @@ class UserInfoVC: GFDataLoadingVC {
     @objc func dismissVC() {
         dismiss(animated: true)
     }
-    
 }
 
 extension UserInfoVC: GFRepoItemVCDelegate {
